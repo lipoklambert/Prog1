@@ -83,7 +83,7 @@ try{
 	auto res_v = find(vi2.begin(), vi2.end(), 3);
 	if (res_v != vi2.end())
 		cout << "vi2 contains 3 at position: " << distance(vi2.begin(), res_v) << endl;
-		//distance: megadja az első és második paraméter közötti elemek számát
+		//distance: megadja az első és második paraméter közötti ugrások számát
 	else
 		cout << "vi2 does not contain 3" << endl;
 		

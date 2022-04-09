@@ -1,0 +1,10 @@
+ball 12 10
+cup 121 101
+hair 1212 323
+nose 54 564
+nail 21 12
+rose 101 11
+paper 22 23
+sausage 123 34
+net 11 22
+road 231 342

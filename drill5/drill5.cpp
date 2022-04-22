@@ -57,10 +57,14 @@ private:
 	
 };
 
+/*Az Address argumentumok azt adják meg, hogy a függvény olyan argumentumokat vesz fel, amelyek címei „valaminek a memóriában” */
+
 /*
 [] lambda introducer -> Meghatározza, hogy mely változók kerülnek rögzítésre, és hogy a rögzítés érték vagy hivatkozás alapján történik-e. (here: captures nothing)
 () argument list 
 {} function body*/
+
+/*A reference_to<Lines_window>(pw) azt jelzi a fordítónak, hogy a pw-ben lévő címet a Lines_window egy címének lehet tekinteni; használhatjuk a reference_to<Lines_window>(pw)-t a Lines_window-ra hivatkozásra*/
 
 Lines_window::Lines_window(Point xy, int w, int h, const string& title)		
 	:Window{xy,w,h,title},

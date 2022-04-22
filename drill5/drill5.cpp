@@ -57,6 +57,11 @@ private:
 	
 };
 
+/*
+[] lambda introducer -> Meghatározza, hogy mely változók kerülnek rögzítésre, és hogy a rögzítés érték vagy hivatkozás alapján történik-e. (here: captures nothing)
+() argument list 
+{} function body*/
+
 Lines_window::Lines_window(Point xy, int w, int h, const string& title)		
 	:Window{xy,w,h,title},
 	next_button{Point{x_max()-150,0}, 70, 20, "Next point",

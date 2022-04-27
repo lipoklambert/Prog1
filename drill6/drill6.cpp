@@ -76,7 +76,7 @@ int main(){
 	//cout << "S<vector<int>> : " << svi.val << endl;
 	
 	cout << "S<vector<int>> : ";
-	for(auto& a : svi.get()){   //a az auto, tehát típusa futási időben derül ki
+	for(int a : svi.get()){  
 		cout << a << ' ';
 	}
 	cout << endl;

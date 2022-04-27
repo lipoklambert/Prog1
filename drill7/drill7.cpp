@@ -9,7 +9,7 @@ using namespace std;
 
 template<typename C>
 void print(const C& c){
-	for(auto& data : c){
+	for(auto data : c){
 		cout << data << ' ';
 	}
 	cout << endl;
@@ -80,7 +80,7 @@ try{
 	
 	// 3 keresése a vectorban:
 	/*find: Egy iterátort ad vissza a [first,last) tartomány legelső elemére, amely egyenlő a val (3. paraméter) értékkel. Ha nem található ilyen elem, a függvény last-tal (2. paraméter) tér vissza. */
-	auto res_v = find(vi2.begin(), vi2.end(), 3);
+	vector<int>::iterator res_v = find(vi2.begin(), vi2.end(), 3);
 	if (res_v != vi2.end())
 		cout << "vi2 contains 3 at position: " << distance(vi2.begin(), res_v) << endl;
 		//distance: megadja az első és második paraméter közötti ugrások számát
@@ -88,7 +88,7 @@ try{
 		cout << "vi2 does not contain 3" << endl;
 		
 	// 27 keresése a list-ben:
-	auto res_l = find(li2.begin(), li2.end(), 27);
+	list<int>::iterator res_l = find(li2.begin(), li2.end(), 27);
 	if (res_l != li2.end())
 		cout << "li2 contains 27 at position: " << distance(li2.begin(), res_l) << endl;
 	else

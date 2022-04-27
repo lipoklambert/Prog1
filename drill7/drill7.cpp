@@ -9,7 +9,7 @@ using namespace std;
 
 template<typename C>
 void print(const C& c){
-	for(auto& data : c){
+	for(auto data : c){
 		cout << data << ' ';
 	}
 	cout << endl;

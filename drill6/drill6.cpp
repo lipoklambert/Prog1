@@ -76,7 +76,7 @@ int main(){
 	//cout << "S<vector<int>> : " << svi.val << endl;
 	
 	cout << "S<vector<int>> : ";
-	for(int a : svi.get()){  
+	for(int a : svi.get()){   
 		cout << a << ' ';
 	}
 	cout << endl;
